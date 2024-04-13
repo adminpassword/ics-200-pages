@@ -11,8 +11,13 @@
   <body>
 
     <a-scene>
+      <a-assets>
+        <img id="venice" src="Venice.Still001.jpeg">
+      </a-assets>
     
-    <a-sky src="Venice.Still001.jpeg" rotation="0 -130 0"></a-sky>
+      <!-- 360-degree image. -->
+      <a-sky id="image-360" radius="10" src="#venice"></a-sky>
+    
     
     <a-text font="kelsonsans" value="Japan" width="6" position="-2.5 0.25 -1.5"
     
@@ -20,7 +25,9 @@
     
     </a-scene>
     
-    </body>
+  </body>
+
+  
 
 </body>
 </html>
